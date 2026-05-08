@@ -1,0 +1,1 @@
+# Haptiq Automation Framework
