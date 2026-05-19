@@ -1,7 +1,7 @@
 
 import { test, expect, APIRequestContext } from '@playwright/test';
-import { createAPIContext } from '../utils/apiClient';
-import { UsersAPI } from '../api/usersApi';
+import { createAPIContext } from '../../src/api/apiClient';
+import { UsersAPI } from '../../src/api/usersApi';
 
 let apiContext: APIRequestContext;
 let usersApi: UsersAPI;
@@ -66,3 +66,4 @@ test('Verify GET /users returns list', async () => {
   const body = await response.json();
   expect(Array.isArray(body)).toBeTruthy();
 });
+

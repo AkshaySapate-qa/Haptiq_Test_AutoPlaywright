@@ -10,9 +10,7 @@ export class UsersAPI {
   async getUserById(id: number) {
     return await this.apiContext.get(`/users/${id}`);
   }
+  
 }
-
-
-
 
 
