@@ -3,7 +3,7 @@ import { ENV } from '../../config/env';
 
 export async function createAPIContext(): Promise<APIRequestContext> {
     return await request.newContext({
-        baseURL: ENV.baseURL, // <--- Use this instead of the hardcoded string
+        baseURL: ENV.baseURL, 
         extraHTTPHeaders: {
             Accept: 'application/json',
         },
