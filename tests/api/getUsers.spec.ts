@@ -12,7 +12,7 @@ test.beforeAll(async () => {
 
 test.afterAll(async () => {
   await apiContext.dispose();
-});
+}); // test result git status
 
 test.describe('GET Users API Tests', () => {
   test('Verify GET /users returns list of users successfully', async () => {
