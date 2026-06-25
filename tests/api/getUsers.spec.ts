@@ -18,6 +18,9 @@ test.describe('GET Users API Tests', () => {
   test('Verify GET /users returns list of users successfully', async () => {
     const response = await apiContext.get('/users');
 
+    test('Verify GET /users returns list of users successfully', async () => {
+    const response = await apiContext.get('/users');
+
     expect(response.status()).toBe(200);
 
     const responseBody = await response.json();
@@ -30,6 +33,8 @@ test.describe('GET Users API Tests', () => {
     expect(firstUser).toHaveProperty('id');
     expect(firstUser).toHaveProperty('name');
     expect(firstUser).toHaveProperty('email');
+    expect(firstUser).toHaveProperty('loc');
+
 
     expect(firstUser.email).toContain('@');
   });
