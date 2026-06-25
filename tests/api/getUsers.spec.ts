@@ -13,7 +13,7 @@ test.beforeAll(async () => {
 test.afterAll(async () => {
   await apiContext.dispose();
 }); // VERIFY PR Changes ---->
-
+test.afterAll ; 
 test.describe('GET Users API Tests', () => {
   test('Verify GET /users returns list of users successfully', async () => {
     const response = await apiContext.get('/users');
